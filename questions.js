@@ -1,0 +1,20 @@
+questions =  [
+    {"id": 0, "question": "Unethical behavior is best described as a violation of some principle.", "effects": {"cons": -1}},
+    {"id": 1, "question": "A person's actions should be described in terms of being right or wrong.", "effects": {"cons": -1}},
+    {"id": 2, "question": "When people disagree over ethical matters, I strive for workable compromises.", "effects": {"cons": 1}},
+    {"id": 3, "question": "Uttering a falsehood is wrong because it wouldn't be right for anyone to lie.", "effects": {"cons": -1}},
+    {"id": 4, "question": "When making a decision, the consequences are usually more important than the underlying reasoning.", "effects": {"cons": 1}},
+    {"id": 5, "question": "The ends usually justify the means.", "effects": {"cons": 1}},
+    {"id": 6, "question": "Pity/compassion prevents others from actively looking after their own needs.", "effects": {"alt": -1}},
+    {"id": 7, "question": "Selflessness is a virtue.", "effects": {"alt": 1}},
+    {"id": 8, "question": "The happiness of those around me matters more to me than my own prosperity.", "effects": {"alt": 1}},
+    {"id": 9, "question": "I will usually put my family, my community, or my people above my own personal goals.", "effects": {"alt": 1}},
+    {"id": 10, "question": "Individuals should always act in their own self-interest.", "effects": {"alt": -1}},
+    {"id": 11, "question": "People cannot be truly altruistic.", "effects": {"alt": -1}},
+    {"id": 12, "question": "No actions are inherently moral or immoral.", "effects": {"mor": -1}},
+    {"id": 13, "question": "There is an underlying morality in everything that we do.", "effects": {"mor": 1}},
+    {"id": 14, "question": "I don't care about morality.", "effects": {"mor": -1}},
+    {"id": 15, "question": "There is a distinction between 'good' and 'bad' that goes beyond mere social forces.", "effects": {"mor": 1}},
+    {"id": 16, "question": "There is a way to live that is morally ideal.", "effects": {"mor": 1}},
+    {"id": 17, "question": "Good and evil are a matter of perspective.", "effects": {"mor": -1}}
+];

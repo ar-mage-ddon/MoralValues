@@ -1,0 +1,53 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>MoralValues</title>
+    <link rel="icon" type="x-icon" href="icon.png">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<h1 class="title">MoralValues</h1>
+    <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
+		<text x="50%" y="15" class="svgHeader">MoralValues</text>
+	</svg>
+    <hr>
+    <img src="" id="banner">
+    <button class="button" onclick="location.href='instructions.html';">Click here to start!</button>
+
+    <h2>What is MoralValues?</h2>
+        <p>MoralValues is a moral compass test. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be displayed on a moral compass.<br /><br />
+        See Github for question sources.</br></br>
+        There are <b><u><span id="numOfQuestions"></span></u></b> questions in the test.</p>
+    <h2>Your questions / results suck!</h2>
+    <p>Send me a message on Discord at rin#6986.</p>
+    <h2>Legal notice</h2>
+    <p>MoralValues is a modified copy of SapplyValues and respects its copyright notice.</p>
+    <p>MIT License</p>
+    <p>Copyright (C) 2017-2019 8values</p>
+    <p>Copyright (C) 2020-2021 SapplyValues</p>
+    <p>8values, 9axes, and SapplyValues are licensed under the Expat/MIT license. You can find a copy of the license <a href="LICENSE">here</a> or on the <a href="https://github.com/SapplyValues/SapplyValues.github.io/blob/master/LICENSE">GitHub repo</a>.</p>
+
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+        document.getElementById("numOfQuestions").innerHTML = questions.length;
+
+        window.onload = function() {
+            var background = new Image();
+            background.onload = function() {
+                var c = document.createElement("canvas");
+                c.width = 1850;
+                c.height = 1300;
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#EEEEEE"
+                ctx.fillRect(0, 0, 1850, 1300);
+                ctx.drawImage(background, 0, 0);
+
+                document.getElementById("banner").src = c.toDataURL();
+            }
+            background.src = "./compass2.png";
+        }
+    </script>
+</body>
