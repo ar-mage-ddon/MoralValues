@@ -5,6 +5,7 @@ html {
 body {
     width: 80%;
     min-height: calc(100vh - 4em);
+    border-width: 20px;
     margin: 0 auto;
     padding: 2em;
     background-color: #dddddd;
